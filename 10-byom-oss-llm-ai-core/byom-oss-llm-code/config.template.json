@@ -1,28 +1,28 @@
 {
   "comment": "name will be used as git repository name and application name. the value of ai_core_service_key section should be copied from service key of your AI Core instance",
-  "name": "byom-open-source-llms",
+  "name": "skon-byom-open-source-llms",
   "resource_group": "oss-llm",
   "ai_core_service_key": {
-    "clientid": "<REPLACE_WITH_YOUR_AI_CORE_CLIENT_ID>",
-    "clientsecret": "<REPLACE_WITH_YOUR_AI_CORE_CLIENT_SECRET>",
-    "url": "<REPLACE_WITH_YOUR_AI_CORE_URL> something like https://xxxxxx.authentication.eu10.hana.ondemand.com",
-    "identityzone": "<REPLACE_WITH_YOUR_AI_CORE_ID_ZONE>",
-    "identityzoneid": "<REPLACE_WITH_YOUR_AI_CORE_ID_ZONE_ID>",
-    "appname": "<REPLACE_WITH_YOUR_AI_CORE_ID_ZONE_APPNAME>",
+    "clientid": "sb-4c5e0001-e6b9-4607-b56a-89737e66d5f4!b386405|aicore!b540",
+    "clientsecret": "ed02ecda-15ea-4832-95f1-3ffa2b7191a8$v2b4y3U6p_FzjWxRBl2_tBCN-ws2zwKf0P5vWjUYOtE=",
+    "url": "https://abat-intern-artificial-intelligence-cbcdgkne.authentication.eu10.hana.ondemand.com",
+    "identityzone": "abat-intern-artificial-intelligence-cbcdgkne",
+    "identityzoneid": "d057318e-746b-4143-a29d-ab692f5729e5",
+    "appname": "4c5e0001-e6b9-4607-b56a-89737e66d5f4!b386405|aicore!b540",
     "serviceurls": {
-      "AI_API_URL": "<REPLACE_WITH_YOUR_AI_CORE_AI_API_URL> Something like https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com"
+      "AI_API_URL": "https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com"
     }
   },
   "docker_secret": {
     "name": "docker-secret",
     "data": {
-      ".dockerconfigjson": "{\"auths\": {\"docker.io\": {\"username\": \"<REPLACE_WITH_YOUR_DOCKER_USERNAME>\", \"password\": \"<REPLACE_WITH_YOUR_DOCKER_ACCESS_TOKEN>\"}}}"
+      ".dockerconfigjson": "{\"auths\": {\"docker.io\": {\"username\": \"ko2090\", \"password\": \"dckr_pat_jNKLrl8LBdV45NDn4PVQD-WJUEY\"}}}"
     }
   },
   "git_repo": {
-    "repo_url": "https://github.com/<YOUR_GIT_HUB_USER>/btp-generative-ai-hub-use-cases",
-    "user": "<REPLACE_WITH_YOUR_GITHUB_USER>",
-    "access_token": "<REPLACE_WITH_YOUR_GITHUB_USER_ACCESS_TOKEN>"
+    "repo_url": "https://github.com/komineglo/btp-generative-ai-hub-use-cases.git",
+    "user": "komineglo",
+    "access_token": "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"
   },
   "application": {
     "path_in_repo": "10-byom-oss-llm-ai-core/byom-oss-llm-templates",
