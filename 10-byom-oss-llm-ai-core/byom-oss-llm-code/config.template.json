@@ -4,7 +4,7 @@
   "resource_group": "oss-llm",
   "ai_core_service_key": {
     "clientid": "sb-4c5e0001-e6b9-4607-b56a-89737e66d5f4!b386405|aicore!b540",
-    "clientsecret": "ed02ecda-15ea-4832-95f1-3ffa2b7191a8$v2b4y3U6p_FzjWxRBl2_tBCN-ws2zwKf0P5vWjUYOtE=",
+    "clientsecret": "5d9e8f7a-4daf-4ebb-860a-c136395957b3$mrTmkqzZ5kcsOtdUTmwsEy1fQFJVX7hnhBc9TSe_BvI=",
     "url": "https://abat-intern-artificial-intelligence-cbcdgkne.authentication.eu10.hana.ondemand.com",
     "identityzone": "abat-intern-artificial-intelligence-cbcdgkne",
     "identityzoneid": "d057318e-746b-4143-a29d-ab692f5729e5",
@@ -12,7 +12,7 @@
     "serviceurls": {
       "AI_API_URL": "https://api.ai.prod.eu-central-1.aws.ml.hana.ondemand.com"
     }
-  },
+  }},
   "docker_secret": {
     "name": "docker-secret",
     "data": {
