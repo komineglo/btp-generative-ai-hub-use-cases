@@ -79,6 +79,7 @@ spec:
               --max-num-batched-tokens {{inputs.parameters.maxNumBatchedTokens}}
               --max-num-seqs {{inputs.parameters.maxNumSeqs}}
               --quantization {{inputs.parameters.quantization}}
+              --trust-remote-code
           env:
             - name: MODEL
               value: "{{inputs.parameters.modelName}}"
