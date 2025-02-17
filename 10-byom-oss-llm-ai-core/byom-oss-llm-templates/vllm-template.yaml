@@ -57,7 +57,7 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: dckr_pat_jNKLrl8LBdV45NDn4PVQD-WJUEY
+        - name: docker-secret
         minReplicas: 1
         maxReplicas: 1
         containers:
@@ -79,6 +79,7 @@ spec:
               --max-num-batched-tokens {{inputs.parameters.maxNumBatchedTokens}}
               --max-num-seqs {{inputs.parameters.maxNumSeqs}}
               --quantization {{inputs.parameters.quantization}}
+              --trust-remote-code
           env:
             - name: MODEL
               value: "{{inputs.parameters.modelName}}"
