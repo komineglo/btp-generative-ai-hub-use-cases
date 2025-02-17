@@ -13,8 +13,8 @@ metadata:
 spec:
   inputs:
     parameters:
-      - name: modelName # placeholder Name
-        default: "jsincn/phi-3-mini-128k-instruct-awq" 
+      - name: modelName # placeholder name
+        default: "TheBloke/Mistral-7B-Instruct-v0.2-AWQ" 
         type: string # required for every parameters
         description: "--model: Name or path of the huggingface model to use. https://docs.vllm.ai/en/latest/models/supported_models.html/ for supported models. The same model name is used with SAP Generative AI Hub SDK"
       - name: dataType # Data Type
@@ -22,7 +22,7 @@ spec:
         type: string # required for every parameters
         description: "--dtype: Data type for model weights and activations. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: gpuMemoryUtilization # GPU Memory Utilization
-        default: "0.75" 
+        default: "0.9" 
         type: string # required for every parameters
         description: "The fraction(0~1) of GPU memory to be used for the model executor. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: maxTokenLen # placeholder name
@@ -57,7 +57,7 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: docker-secret
+        - name: dckr_pat_jNKLrl8LBdV45NDn4PVQD-WJUEY
         minReplicas: 1
         maxReplicas: 1
         containers:
@@ -79,7 +79,6 @@ spec:
               --max-num-batched-tokens {{inputs.parameters.maxNumBatchedTokens}}
               --max-num-seqs {{inputs.parameters.maxNumSeqs}}
               --quantization {{inputs.parameters.quantization}}
-
           env:
             - name: MODEL
               value: "{{inputs.parameters.modelName}}"
