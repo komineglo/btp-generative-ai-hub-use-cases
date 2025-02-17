@@ -14,7 +14,7 @@ spec:
   inputs:
     parameters:
       - name: modelName # placeholder name
-        default: "mosaicml/mpt-7b-8k-chat" 
+        default: "cognitivecomputations/DeepSeek-R1-AWQ" 
         type: string # required for every parameters
         description: "--model: Name or path of the huggingface model to use. https://docs.vllm.ai/en/latest/models/supported_models.html/ for supported models. The same model name is used with SAP Generative AI Hub SDK"
       - name: dataType # Data Type
@@ -22,23 +22,23 @@ spec:
         type: string # required for every parameters
         description: "--dtype: Data type for model weights and activations. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: gpuMemoryUtilization # GPU Memory Utilization
-        default: "0.9" 
+        default: "0.75" 
         type: string # required for every parameters
         description: "The fraction(0~1) of GPU memory to be used for the model executor. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: maxTokenLen # placeholder name
-        default: "2048" 
+        default: "1024" 
         type: string # required for every parameters
         description: "--max-model-len: Model context length. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: maxNumBatchedTokens # placeholder name
-        default: "2048" 
+        default: "1024" 
         type: string # required for every parameters
         description: "--max-num-batched-tokens: Maximum number of batched tokens per iteration. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: maxNumSeqs # placeholder name
-        default: "2048" 
+        default: "512" 
         type: string # required for every parameters
         description: "--max-num-seqs: Maximum number of sequences per iteration. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: quantization # placeholder name
-        default: "None" 
+        default: "awq" 
         type: string # required for every parameters
         description: "--quantization: Method used to quantize the weights. https://docs.vllm.ai/en/latest/models/engine_args.html" 
       - name: resourcePlan
