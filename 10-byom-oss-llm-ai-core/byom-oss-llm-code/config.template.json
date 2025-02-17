@@ -155,7 +155,7 @@
       "parameters": [
         {
           "key": "modelName",
-          "value": "TheBloke/Mistral-7B-Instruct-v0.2-AWQ"
+          "value": "TheBloke/deepseek-llm-7B-chat-AWQ"
         },
         {
           "key": "dataType",
