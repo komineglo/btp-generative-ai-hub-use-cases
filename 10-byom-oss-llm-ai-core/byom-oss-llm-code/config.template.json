@@ -155,7 +155,7 @@
       "parameters": [
         {
           "key": "modelName",
-          "value": "cognitivecomputations/DeepSeek-R1-AWQ"
+          "value": "TheBloke/Mistral-7B-Instruct-v0.2-AWQ"
         },
         {
           "key": "dataType",
@@ -163,7 +163,7 @@
         },
         {
           "key": "gpuMemoryUtilization",
-          "value": "0.75"
+          "value": "0.95"
         },
         {
           "key": "maxTokenLen",
@@ -183,7 +183,7 @@
         },
         {
           "key": "resourcePlan",
-          "value": "infer.l"
+          "value": "infer.s"
         }
       ]
     },
