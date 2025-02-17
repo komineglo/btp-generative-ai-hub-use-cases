@@ -14,4 +14,4 @@ ENV MODEL="TheBloke/Mistral-7B-Instruct-v0.2-AWQ"
 
 EXPOSE 8000
 
-ENTRYPOINT ["python3", "-m", "vllm.entrypoints.openai.api_server", "--model", "TheBloke/Mistral-7B-Instruct-v0.2-AWQ", "--dtype","half", "--gpu-memory-utilization", "0.95"]
+ENTRYPOINT ["/bin/sh", "-c", "python3 -m vllm.entrypoints.openai.api_server --model $MODEL --dtype half --gpu-memory-utilization 0.95"]
