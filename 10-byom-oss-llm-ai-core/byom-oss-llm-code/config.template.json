@@ -163,19 +163,19 @@
         },
         {
           "key": "gpuMemoryUtilization",
-          "value": "0.75"
+          "value": "0.95"
         },
         {
           "key": "maxTokenLen",
-          "value": "1024"
+          "value": "2048"
         },
         {
           "key": "maxNumBatchedTokens",
-          "value": "1024"
+          "value": "2048"
         },
         {
           "key": "maxNumSeqs",
-          "value": "512"
+          "value": "2048"
         },
         {
           "key": "quantization",
