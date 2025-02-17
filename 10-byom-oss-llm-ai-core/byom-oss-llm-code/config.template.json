@@ -163,7 +163,7 @@
         },
         {
           "key": "gpuMemoryUtilization",
-          "value": "0.95"
+          "value": "0.75"
         },
         {
           "key": "maxTokenLen",
