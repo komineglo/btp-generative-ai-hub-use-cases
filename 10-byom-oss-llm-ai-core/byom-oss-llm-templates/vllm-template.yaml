@@ -13,7 +13,7 @@ metadata:
 spec:
   inputs:
     parameters:
-      - name: modelName # placeholder name
+      - name: modelName # placeholder Name
         default: "cognitivecomputations/DeepSeek-R1-AWQ" 
         type: string # required for every parameters
         description: "--model: Name or path of the huggingface model to use. https://docs.vllm.ai/en/latest/models/supported_models.html/ for supported models. The same model name is used with SAP Generative AI Hub SDK"
