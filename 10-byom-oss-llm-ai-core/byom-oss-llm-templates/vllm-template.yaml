@@ -14,7 +14,7 @@ spec:
   inputs:
     parameters:
       - name: modelName # placeholder Name
-        default: "TheBloke/Phi-2-AWQ" 
+        default: "jsincn/phi-3-mini-128k-instruct-awq" 
         type: string # required for every parameters
         description: "--model: Name or path of the huggingface model to use. https://docs.vllm.ai/en/latest/models/supported_models.html/ for supported models. The same model name is used with SAP Generative AI Hub SDK"
       - name: dataType # Data Type
@@ -38,7 +38,7 @@ spec:
         type: string # required for every parameters
         description: "--max-num-seqs: Maximum number of sequences per iteration. https://docs.vllm.ai/en/latest/models/engine_args.html"
       - name: quantization # placeholder name
-        default: "awq" 
+        default: "None" 
         type: string # required for every parameters
         description: "--quantization: Method used to quantize the weights. https://docs.vllm.ai/en/latest/models/engine_args.html" 
       - name: resourcePlan
@@ -79,8 +79,7 @@ spec:
               --max-num-batched-tokens {{inputs.parameters.maxNumBatchedTokens}}
               --max-num-seqs {{inputs.parameters.maxNumSeqs}}
               --quantization {{inputs.parameters.quantization}}
-              --tensor-parallel-size 1
-              --trust-remote-code
+
           env:
             - name: MODEL
               value: "{{inputs.parameters.modelName}}"
